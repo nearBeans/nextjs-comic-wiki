@@ -1,0 +1,41 @@
+.search {
+  display: flex;
+  border: 1px solid black;
+  width: 50%;
+  height: 48px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.search-box {
+  width: 100%;
+  height: 100%;
+}
+
+.search-btn {
+  display: flex;
+  background-color: #282828;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 100%;
+
+  svg path {
+    fill: white;
+  }
+}
+
+.section-wrapper {
+  display: grid;
+  margin: var(--space-6);
+  grid-template-columns: 4fr 1fr;
+}
+
+.main-section {
+  margin-right: var(--space-6);
+}
+
+.rankings {
+  height: 100dvh;
+  border: 1px solid #282828;
+}

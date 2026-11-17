@@ -1,0 +1,66 @@
+:root {
+  /* ==========================================================================
+     8px Grid Spacing System (rem基準: 1rem = 16px想定)
+     ========================================================================== */
+  
+  /* 微調整用（ハーフグリッド） */
+  --space-0: 0;
+  --space-0-5: 0.25rem;  /* 4px */
+
+  /* 基本グリッド（8pxの倍数） */
+  --space-1: 0.5rem;     /* 8px  - 最小の要素間余白・アイコンと文字の間など */
+  --space-2: 1rem;       /* 16px - 基本の余白・カードのパディングなど */
+  --space-3: 1.5rem;     /* 24px - 関連するグループ間の余白 */
+  --space-4: 2rem;       /* 32px - コンポーネント間の余白 */
+  --space-5: 2.5rem;     /* 40px */
+  --space-6: 3rem;       /* 48px - 小さめのセクション間余白 */
+  --space-7: 3.5rem;     /* 56px */
+  --space-8: 4rem;       /* 64px - 標準的なセクション間余白 */
+  --space-10: 5rem;      /* 80px */
+  --space-12: 6rem;      /* 96px - 大きめのセクション間余白 */
+  --space-16: 8rem;      /* 128px - ヒーローエリアなどの特大余白 */
+
+  /* ==========================================================================
+     8pxグリッドに合わせた関連サイズ（角丸・レイアウト幅など）
+     ========================================================================== */
+  --radius-sm: 0.25rem;  /* 4px */
+  --radius-md: 0.5rem;   /* 8px */
+  --radius-lg: 1rem;     /* 16px */
+
+  --container-sm: 40rem; /* 640px (8 × 80) */
+  --container-md: 48rem; /* 768px (8 × 96) */
+  --container-lg: 64rem; /* 1024px (8 × 128) */
+  --container-xl: 80rem; /* 1280px (8 × 160) */
+}
+
+.works-list {
+   width: 100%;
+   height: 256px;
+   margin: var(--space-8) 0;
+
+   h2 {
+      font-size: 1.6rem;
+   }
+   .scroll-x {
+      height: 100%;
+      display: flex;
+      gap: var(--space-3);
+      overflow-x: auto;
+   }
+}
+
+.card {
+   width: 144px;
+   height: 100%;
+   flex-shrink: 0;
+
+   img {
+      width: 100%;
+   }
+
+   h3 {
+      width: 100%;
+      font-size: 1.2rem;
+      font-weight: bold;
+   }
+}
